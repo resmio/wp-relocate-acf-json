@@ -1,0 +1,10 @@
+{
+  "name": "wp-plugins/acf-json-relocate",
+  "version": "master",
+  "type": "wordpress-plugin",
+  "source": {
+      "url": "git@github.com:resmio/wp-relocate-acf-json.git",
+      "type": "git",
+      "reference": "master"
+  }
+}
