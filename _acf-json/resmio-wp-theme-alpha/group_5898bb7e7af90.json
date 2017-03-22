@@ -1,0 +1,366 @@
+{
+    "key": "group_5898bb7e7af90",
+    "title": "[:de]Impressum Vorlagen-Editor[:en]Imprint Template Editor[:]",
+    "fields": [
+        {
+            "default_value": 0,
+            "message": "Use main contact info",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_5898bbe3cd4dc",
+            "label": "[:en]Import contact information[:de]Importiere Kontaktinformationen[:]",
+            "name": "imprint_use_contact_data",
+            "type": "true_false",
+            "instructions": "If checked the content for the contact information is imported from the main settings",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898cba1da94a",
+                    "label": "[:en]Company[:de]Firma[:]",
+                    "name": "company",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898c5abcd4df",
+                    "label": "[:en]Street[:de]Stra\u00dfe[:]",
+                    "name": "street",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898c5f0cd4e0",
+                    "label": "[:en]Zip code and city[:de]PLZ und Ort[:]",
+                    "name": "zip_city",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898c650cd4e1",
+                    "label": "[:en]Country[:de]Land[:]",
+                    "name": "country",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_5898c20ecd4dd",
+            "label": "[:en]Address[:de]Adresse[:]",
+            "name": "imprint_address",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5898bbe3cd4dc",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898c686cd4e3",
+                    "label": "[:en]Phone[:de]Telefon[:]",
+                    "name": "phone",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898c686cd4e4",
+                    "label": "[:en]Mobile[:de]Mobil[:]",
+                    "name": "mobile",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898c686cd4e5",
+                    "label": "[:en]Fax[:de]Fax[:]",
+                    "name": "fax",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898c686cd4e6",
+                    "label": "[:en]E-Mail[:de]E-Mail[:]",
+                    "name": "email",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_5898c686cd4e2",
+            "label": "[:en]Contact[:de]Kontakt[:]",
+            "name": "imprint_contact",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5898bbe3cd4dc",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "readonly": 0,
+                    "disabled": 0,
+                    "key": "field_5898c8cacd4e8",
+                    "label": "[:en]Manager type[:de]Art des Gesch\u00e4ftsf\u00fchrers[:]",
+                    "name": "management_type",
+                    "type": "qtranslate_text",
+                    "instructions": "(e.g. in German: Inhaber, Gesch\u00e4ftsf\u00fchrer, Gesellschafter, etc.)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5898c8cacd4e9",
+                    "label": "[:en]Manager[:de]Gesch\u00e4ftsf\u00fchrer[:]",
+                    "name": "manager",
+                    "type": "text",
+                    "instructions": "Name(s) of the manager(s)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_5898c8cacd4e7",
+            "label": "[:en]Management[:de]Gesch\u00e4ftsf\u00fchrung[:]",
+            "name": "imprint_management",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5898bbe3cd4dc",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "default_value": "",
+                    "key": "field_5898cac2cd4ed",
+                    "label": "[:en]Legal information[:de]Rechtliche Hinweise[:]",
+                    "name": "management_type",
+                    "type": "qtranslate_wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "delay": 0
+                }
+            ],
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_5898cac2cd4ec",
+            "label": "[:en]Legal information[:de]Rechtliche Hinweise[:]",
+            "name": "imprint_legal",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-page-imprint.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "revisions",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1487466534
+}

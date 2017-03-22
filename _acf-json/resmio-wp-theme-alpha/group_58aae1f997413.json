@@ -1,0 +1,173 @@
+{
+    "key": "group_58aae1f997413",
+    "title": "[:de]SEO Einstellungen[:en]SEO settings[:]",
+    "fields": [
+        {
+            "default_value": 0,
+            "message": "Set title",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58aae1f99b7b9",
+            "label": "[:en]Custom title[:de]Benutzerdef. Titel[:]",
+            "name": "resmio_seo_page_title_check",
+            "type": "true_false",
+            "instructions": "If not selected defaults to page title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "readonly": 0,
+            "disabled": 0,
+            "key": "field_58aae1f99b851",
+            "label": "[:en]Title[:de]Titel[:]",
+            "name": "resmio_seo_page_title",
+            "type": "qtranslate_text",
+            "instructions": "If blank defaults to page title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58aae1f99b7b9",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "Set description",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58aae24232e3d",
+            "label": "[:en]Custom description[:de]Benutzerdef. Beschreibung[:]",
+            "name": "resmio_seo_page_description_check",
+            "type": "true_false",
+            "instructions": "If not selected defaults to front page title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "readonly": 0,
+            "disabled": 0,
+            "rows": 6,
+            "key": "field_58aae1f99b8e7",
+            "label": "[:en]Description[:de]Beschreibung[:]",
+            "name": "resmio_seo_page_description",
+            "type": "qtranslate_textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58aae24232e3d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "Set keywords",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58aae2a032e3e",
+            "label": "[:en]Custom keywords[:de]Benutzerdef. Schl\u00fcsselw\u00f6rter[:]",
+            "name": "resmio_seo_page_keycheck_check",
+            "type": "true_false",
+            "instructions": "If not selected defaults to front page keywords",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "readonly": 0,
+            "disabled": 0,
+            "rows": 4,
+            "key": "field_58aae1f99b98c",
+            "label": "[:en]Keywords[:de]Schl\u00fcsselw\u00f6rter[:]",
+            "name": "resmio_seo_page_keywords",
+            "type": "qtranslate_textarea",
+            "instructions": "Comma separated keywords list",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58aae2a032e3e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 100,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Change the information for google search results (and alike)",
+    "modified": 1487594367
+}

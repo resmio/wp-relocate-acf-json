@@ -1,0 +1,68 @@
+{
+    "key": "group_58974227c9fe0",
+    "title": "[:en]Reservation Template Editor[:de]Reservierung Vorlagen-Editor[:]",
+    "fields": [
+        {
+            "sub_fields": [
+                {
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "default_value": "",
+                    "key": "field_5897442d8f60c",
+                    "label": "[:en]Text[:de]Text[:]",
+                    "name": "wysiwyg_editor",
+                    "type": "qtranslate_wysiwyg",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "delay": 0
+                }
+            ],
+            "min": 0,
+            "max": 1,
+            "layout": "block",
+            "button_label": "Add content",
+            "collapsed": "",
+            "key": "field_589742d38f60b",
+            "label": "[:en]Additional content[:de]Zus\u00e4tzlicher Inhalt[:]",
+            "name": "reservation_group_additional",
+            "type": "repeater",
+            "instructions": "Press 'Add content' to insert additional data\/information",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-page-reservation.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "revisions",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1486643671
+}

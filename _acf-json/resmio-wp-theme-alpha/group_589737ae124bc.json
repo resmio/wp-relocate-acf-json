@@ -1,0 +1,473 @@
+{
+    "key": "group_589737ae124bc",
+    "title": "[:en]Menu Template Editor[:de]Speisekarte Vorlagen-Editor[:]",
+    "fields": [
+        {
+            "layouts": [
+                {
+                    "key": "589738f649fc5",
+                    "name": "block_wysiwyg",
+                    "label": "Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "default_value": "",
+                            "key": "field_58973964ae23d",
+                            "label": "[:en]Text editor[:de]Text-Editor[:]",
+                            "name": "wysiwyg_editor",
+                            "type": "qtranslate_wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "589739bcae23e",
+                    "name": "block_menu",
+                    "label": "Menu (excerpt)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "layouts": [
+                                {
+                                    "key": "58973a0675b22",
+                                    "name": "block_title",
+                                    "label": "Title",
+                                    "display": "row",
+                                    "sub_fields": [
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "readonly": 0,
+                                            "disabled": 0,
+                                            "key": "field_58973ad7ae241",
+                                            "label": "[:en]Title[:de]Titel[:]",
+                                            "name": "menu_title",
+                                            "type": "qtranslate_text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                {
+                                    "key": "58973c04ae244",
+                                    "name": "block_subtitle",
+                                    "label": "Subtitle",
+                                    "display": "row",
+                                    "sub_fields": [
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "readonly": 0,
+                                            "disabled": 0,
+                                            "key": "field_58973c04ae245",
+                                            "label": "[:en]Subtitle[:de]Untertitel[:]",
+                                            "name": "menu_subtitle",
+                                            "type": "qtranslate_text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                {
+                                    "key": "58973aa3ae240",
+                                    "name": "block_dish",
+                                    "label": "Dish",
+                                    "display": "row",
+                                    "sub_fields": [
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "readonly": 0,
+                                            "disabled": 0,
+                                            "key": "field_58973c55ae246",
+                                            "label": "[:en]Dish[:de]Speise[:]",
+                                            "name": "dish_name",
+                                            "type": "qtranslate_text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "readonly": 0,
+                                            "disabled": 0,
+                                            "key": "field_58973ca602983",
+                                            "label": "[:en]Description[:de]Beschreibung[:]",
+                                            "name": "dish_descr",
+                                            "type": "qtranslate_text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "sub_fields": [
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58973dd102985",
+                                                    "label": "[:en]Price[:de]Preis[:]",
+                                                    "name": "dish_price",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": 0,
+                                            "max": 3,
+                                            "layout": "block",
+                                            "button_label": "Add price",
+                                            "collapsed": "",
+                                            "key": "field_58973d4702984",
+                                            "label": "[:en]Price(s)[:de]Preis(e)[:]",
+                                            "name": "dish_prices",
+                                            "type": "repeater",
+                                            "instructions": "Press 'Add price' to insert up to three different prices (per dish)",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "return_format": "array",
+                                            "preview_size": "thumbnail",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": "jpg, jpeg, png, gif",
+                                            "key": "field_58973e3602986",
+                                            "label": "[:en]Image[:de]Bild[:]",
+                                            "name": "dish_image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": "",
+                            "button_label": "Add menu block",
+                            "key": "field_58973a00ae23f",
+                            "label": "[:en]Top dishes[:de]Beliebte Speisen[:]",
+                            "name": "menu_entries_blocks",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "sub_fields": [
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "1": "Modern",
+                                        "2": "Classic"
+                                    },
+                                    "default_value": [
+                                        1
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_589c4dbce8a54",
+                                    "label": "Menu style",
+                                    "name": "menu_style",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ],
+                            "min": 1,
+                            "max": 1,
+                            "layout": "row",
+                            "button_label": "",
+                            "collapsed": "",
+                            "key": "field_589c4d6be8a53",
+                            "label": "Menu layout",
+                            "name": "menu_layout",
+                            "type": "repeater",
+                            "instructions": "Choose the style of the menu (top dishes)",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "58973f2002987",
+                    "name": "block_menu_download",
+                    "label": "Menu download",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "sub_fields": [
+                                {
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_size": "",
+                                    "max_size": "",
+                                    "mime_types": "pdf, jpg, jpeg, png",
+                                    "key": "field_589c4e3126236",
+                                    "label": "File",
+                                    "name": "download_file",
+                                    "type": "file",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "Download menu",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "readonly": 0,
+                                    "disabled": 0,
+                                    "key": "field_589c51ca56046",
+                                    "label": "Button Label",
+                                    "name": "download_button_label",
+                                    "type": "qtranslate_text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "sub_fields": [
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "readonly": 0,
+                                            "disabled": 0,
+                                            "key": "field_589c529056048",
+                                            "label": "Text",
+                                            "name": "info_text",
+                                            "type": "qtranslate_text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "multiple": 0,
+                                            "allow_null": 0,
+                                            "choices": {
+                                                "1": "Above",
+                                                "2": "Below"
+                                            },
+                                            "default_value": [
+                                                1
+                                            ],
+                                            "ui": 0,
+                                            "ajax": 0,
+                                            "placeholder": "",
+                                            "return_format": "value",
+                                            "key": "field_589c52b056049",
+                                            "label": "Position",
+                                            "name": "info_position",
+                                            "type": "select",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": 0,
+                                    "max": 1,
+                                    "layout": "block",
+                                    "button_label": "Add info",
+                                    "collapsed": "",
+                                    "key": "field_589c522956047",
+                                    "label": "Additional Info",
+                                    "name": "download_additional_info",
+                                    "type": "repeater",
+                                    "instructions": "Click 'Add info' to insert additional text above or below the download button",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ],
+                            "min": 1,
+                            "max": 1,
+                            "layout": "row",
+                            "button_label": "",
+                            "collapsed": "",
+                            "key": "field_589c4cd3e8a52",
+                            "label": "Menu download",
+                            "name": "download_buttons",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ],
+            "min": 1,
+            "max": "",
+            "button_label": "Add content block",
+            "key": "field_58973828ae23c",
+            "label": "[:en]Content blocks[:de]Inhaltsblock[:]",
+            "name": "menu_content_blocks",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-page-menu.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "revisions",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1486639956
+}
