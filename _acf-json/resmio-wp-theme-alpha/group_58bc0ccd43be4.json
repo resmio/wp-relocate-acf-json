@@ -1,0 +1,41 @@
+{
+    "key": "group_58bc0ccd43be4",
+    "title": "[:de]Shortcode Liste[:en]Shortcode list[:]",
+    "fields": [
+        {
+            "message": "<strong>Address<\/strong>\r\n[restaurant-name]\r\n[restaurant-street]\r\n[restaurant-zip]\r\n[restaurant-city]\r\n[restaurant-country]\r\n\r\n<strong>Restaurant info<\/strong>\r\n[restaurant-type]\r\n[restaurant-categories]\r\n[restaurant-offers]\r\n[restaurant-language]\r\n[restaurant-description]\r\n\r\n<strong>Opening hours<\/strong>\r\n[restaurant-openings]\r\n[restaurant-openings table]\r\n   -> table instead of div\r\n[restaurant-openings plain]\r\n   -> plain text\r\n\r\n<strong>Contact<\/strong>\r\n[restaurant-phone]\r\n[restaurant-mobile]\r\n[restaurant-fax]\r\n[restaurant-email]\r\n\r\n<strong>Social<\/strong>\r\n[restaurant-facebook]\r\n[restaurant-googleplus]\r\n[restaurant-twitter]\r\n[restaurant-instagram]\r\n[restaurant-pinterest]",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58bc0ccd485e5",
+            "label": "[:en]Shortcodes for restaurant settings[:de]Shortcodes f\u00fcr die Restauranteinstellungen[:]",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 150,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Can be used in any text field. Shortcode will be replaced with the associated content.",
+    "modified": 1488719917
+}

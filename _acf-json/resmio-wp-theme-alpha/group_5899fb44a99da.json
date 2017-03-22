@@ -1,0 +1,299 @@
+{
+    "key": "group_5899fb44a99da",
+    "title": "[:en]Tickets Template Editor[:de]Tickets Vorlagen-Editor[:]",
+    "fields": [
+        {
+            "sub_fields": [
+                {
+                    "layout": "vertical",
+                    "choices": {
+                        "1": "Events",
+                        "2": "Coupons"
+                    },
+                    "default_value": [
+                        1,
+                        2
+                    ],
+                    "allow_custom": 0,
+                    "save_custom": 0,
+                    "toggle": 0,
+                    "return_format": "value",
+                    "key": "field_589c63296d2f1",
+                    "label": "Content types",
+                    "name": "content_types",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": 1,
+                    "message": "Hide elapsed tickets",
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "key": "field_589c63f66d2f2",
+                    "label": "Elapsed tickets",
+                    "name": "content_elapsed",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "layout": "vertical",
+                    "choices": {
+                        "1": "Events first",
+                        "2": "Coupons first"
+                    },
+                    "default_value": "",
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "allow_null": 0,
+                    "return_format": "value",
+                    "key": "field_589c6733a82dc",
+                    "label": "Order",
+                    "name": "content_order",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "readonly": 0,
+                            "disabled": 0,
+                            "key": "field_589c651c6d2f4",
+                            "label": "Title",
+                            "name": "events_title",
+                            "type": "qtranslate_text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "sub_fields": [
+                                {
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "default_value": "",
+                                    "key": "field_589c65816d2f6",
+                                    "label": "Text",
+                                    "name": "events_additional_wysiwyg",
+                                    "type": "qtranslate_wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "delay": 0
+                                }
+                            ],
+                            "min": 0,
+                            "max": 1,
+                            "layout": "",
+                            "button_label": "Add content",
+                            "collapsed": "",
+                            "key": "field_589c65436d2f5",
+                            "label": "Additional content",
+                            "name": "events_additional",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": 1,
+                    "max": 1,
+                    "layout": "block",
+                    "button_label": "",
+                    "collapsed": "",
+                    "key": "field_589c648f6d2f3",
+                    "label": "Events",
+                    "name": "content_events",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589c63296d2f1",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "sub_fields": [
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "readonly": 0,
+                            "disabled": 0,
+                            "key": "field_589c65d66d2f8",
+                            "label": "Title",
+                            "name": "coupons_title",
+                            "type": "qtranslate_text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "sub_fields": [
+                                {
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "default_value": "",
+                                    "key": "field_589c65d66d2fa",
+                                    "label": "Text",
+                                    "name": "coupons_additional_wysiwyg",
+                                    "type": "qtranslate_wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "delay": 0
+                                }
+                            ],
+                            "min": 0,
+                            "max": 1,
+                            "layout": "row",
+                            "button_label": "Add content",
+                            "collapsed": "",
+                            "key": "field_589c65d66d2f9",
+                            "label": "Additional content",
+                            "name": "coupons_additional",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": 1,
+                    "max": 1,
+                    "layout": "block",
+                    "button_label": "",
+                    "collapsed": "",
+                    "key": "field_589c65d66d2f7",
+                    "label": "Coupons",
+                    "name": "content_coupons",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_589c63296d2f1",
+                                "operator": "==",
+                                "value": "2"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_589c62d86d2f0",
+            "label": "Tickets",
+            "name": "resmio_tickets",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-page-tickets.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "revisions",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1486645195
+}

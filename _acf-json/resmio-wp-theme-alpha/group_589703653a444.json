@@ -1,0 +1,2195 @@
+{
+    "key": "group_589703653a444",
+    "title": "Startseite Vorlagen-Editor",
+    "fields": [
+        {
+            "sub_fields": [
+                {
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "choices": {
+                        "welcome_text": "Welcome text",
+                        "centered_logo": "Centered logo",
+                        "no_content": "No content"
+                    },
+                    "default_value": [
+                        "welcome_text"
+                    ],
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "return_format": "value",
+                    "key": "field_58971f236fe38",
+                    "label": "[:en]Layout type[:de]Layout Typ[:]",
+                    "name": "intro_content_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "test-class",
+                        "id": "test-id"
+                    }
+                },
+                {
+                    "message": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">\r\n  <p class=\"description\"><strong>Welcome text:<\/strong> Shows an intro text<br \/><strong>Centered logo:<\/strong> Shows a centered logo\/image without text<br \/><strong>No content:<\/strong> Show nothing, except resmio button if not opt out<\/p>\r\n<\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">\r\n  <p class=\"description\"><strong>Welcome text:<\/strong> Zeigt einen Willkommens-Text<br \/><strong>Centered logo:<\/strong> Zeigt ein zentriertes Logo\/Bild ohne Text<br \/><strong>No content:<\/strong> Zeigt keinen Inhalt<\/p>\r\n<\/div>",
+                    "esc_html": 0,
+                    "new_lines": "wpautop",
+                    "key": "field_58d1729ad2cb4",
+                    "label": "[:en]Layout type info[:de]Layout Typ Hinweis[:]",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "[:en]Welcome to the restaurant [restaurant-name][:de]Willkommen im Restaurant [restaurant-name][:]",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "readonly": 0,
+                    "disabled": 0,
+                    "key": "field_58971f916fe39",
+                    "label": "[:en]Title[:de]Titel[:]",
+                    "name": "intro_title",
+                    "type": "qtranslate_text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_58971f236fe38",
+                                "operator": "==",
+                                "value": "welcome_text"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "new_lines": "br",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "readonly": 0,
+                    "disabled": 0,
+                    "rows": 4,
+                    "key": "field_58971fcd6fe3a",
+                    "label": "[:en]Text[:de]Text[:]",
+                    "name": "intro_text",
+                    "type": "qtranslate_textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_58971f236fe38",
+                                "operator": "==",
+                                "value": "welcome_text"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "jpg, jpeg, png, gif",
+                    "key": "field_58d1498eb4474",
+                    "label": "[:en]Logo \/ Image[:de]Logo \/ Bild[:]",
+                    "name": "intro_image",
+                    "type": "qtranslate_image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_58971f236fe38",
+                                "operator": "==",
+                                "value": "centered_logo"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "message": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\"><p class=\"description\">If no image is selected defaults to header logo ('Appearance' -> 'Customize' -> 'Graphics')<\/p><\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\"><p class=\"description\">Wenn kein Bild ausgew\u00e4hlt wird, wird als Standard das Header Logo verwendet ('Design' -> 'Customize' -> 'Graphics')<\/p><\/div>",
+                    "esc_html": 0,
+                    "new_lines": "wpautop",
+                    "key": "field_58d14c0aec28e",
+                    "label": "[:en]Logo \/ Image info[:de]Logo \/ Bild Hinweis[:]",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": 0,
+                    "message": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">hide<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">nicht anzeigen<\/span>",
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "key": "field_5897504fd0572",
+                    "label": "[:en]Reservation button[:de]Reservierungsbutton[:]",
+                    "name": "intro_hide_resmio_button",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_58971f236fe38",
+                                "operator": "==",
+                                "value": "welcome_text"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_58971f236fe38",
+                                "operator": "==",
+                                "value": "centered_logo"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 1,
+            "max": 1,
+            "layout": "row",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_58971ea86fe37",
+            "label": "[:en]Welcome Screen[:de]Begr\u00fc\u00dfungsteil[:]",
+            "name": "home_group_intro",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "message": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">\r\n  <p class=\"description\">Every content block has two tabs:<br \/><strong>Content:<\/strong> area to edit the content of the block section<br \/><strong>Settings<\/strong> area to change the setup of the block section (like background color)<\/p>\r\n<\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">\r\n  <p class=\"description\">Jeder Inhaltsblock hat zwei Reiter:<br \/><strong>Content:<\/strong> Reiter zum \u00e4ndern des Inhalts der Block-Sektion<br \/><strong>Settings<\/strong> Reiter zum \u00e4ndern der Einstellungen der Block-Sektion (wie z.B. Hintergrundfarbe)<\/p>\r\n<\/div>",
+                    "esc_html": 0,
+                    "new_lines": "wpautop",
+                    "key": "field_58d183d02a436",
+                    "label": "[:en]General info[:de]Allgemeiner Hinweis[:]",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "message": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">\r\n  <p>Row layout<\/p><p class=\"description\">Under the settings tab you can change the layout of the row to the following.<\/p><p class=\"description\"><strong>centered:<\/strong> maximal content width 1200px<br \/><strong>centered + padding:<\/strong> maximal content width + translucent padding arround content 1200px<br \/><strong>fullwidth:<\/strong> content width has full window width<br \/><strong>fullwidth + padding:<\/strong> content width + translucent padding arround content has full window width<\/p>\r\n<\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">\r\n  <p>Row layout<\/p><p class=\"description\">Unter dem Reiter 'Settings' kann das Row-Layout mit folgenden Einstellungen ausgew\u00e4hlt werden.<\/p><p class=\"description\"><strong>centered:<\/strong> maximale Breite des Inhalts 1200px<br \/><strong>centered + padding:<\/strong> maximale Breite des Inhalts + transparenter Rand 1200px<br \/><strong>fullwidth:<\/strong> Inhalt hat volle Fensterbreite<br \/><strong>fullwidth + padding:<\/strong> Inhalt + transparenter Rand hat volle Fensterbreite<\/p>\r\n<\/div>",
+                    "esc_html": 0,
+                    "new_lines": "wpautop",
+                    "key": "field_58d17522db91b",
+                    "label": "[:en]Settings info[:de]Einstellungen Hinweis[:]",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "layouts": [
+                        {
+                            "key": "5897221c4bd51",
+                            "name": "block_embed",
+                            "label": "Video (YouTube...)",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "key": "field_58bbfda791e53",
+                                    "label": "Content",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "layout": "horizontal",
+                                    "choices": {
+                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>",
+                                        "text_above": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Text above<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Text oberhalb<\/span>",
+                                        "text_below": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Text below<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Text unterhalb<\/span>"
+                                    },
+                                    "default_value": [],
+                                    "allow_custom": 0,
+                                    "save_custom": 0,
+                                    "toggle": 0,
+                                    "return_format": "value",
+                                    "key": "field_58bb44733988e",
+                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                    "name": "extra_content",
+                                    "type": "checkbox",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "readonly": 0,
+                                    "disabled": 0,
+                                    "key": "field_58bb486539891",
+                                    "label": "[:en]Title[:de]Titel[:]",
+                                    "name": "title",
+                                    "type": "qtranslate_text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58bb44733988e",
+                                                "operator": "==",
+                                                "value": "title"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "new_lines": "br",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "readonly": 0,
+                                    "disabled": 0,
+                                    "rows": "",
+                                    "key": "field_58bb48a839892",
+                                    "label": "[:en]Text above[:de]Text oberhalb[:]",
+                                    "name": "text_above",
+                                    "type": "qtranslate_textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58bb44733988e",
+                                                "operator": "==",
+                                                "value": "text_above"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "width": "",
+                                    "height": "",
+                                    "key": "field_58972bc8f6383",
+                                    "label": "[:en]Video[:de]Video[:]",
+                                    "name": "embed_video",
+                                    "type": "oembed",
+                                    "instructions": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Enter the URL of the video (tested platforms: YouTube, Vimeo)<\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">URL des Videos (getestete Plattformen: YouTube, Vimeo)<\/div>",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "new_lines": "br",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "readonly": 0,
+                                    "disabled": 0,
+                                    "rows": "",
+                                    "key": "field_58bb494d39893",
+                                    "label": "[:en]Text below[:de]Text unterhalb[:]",
+                                    "name": "text_below",
+                                    "type": "qtranslate_textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58bb44733988e",
+                                                "operator": "==",
+                                                "value": "text_below"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "key": "field_58bbfcaf9f5b5",
+                                    "label": "Settings",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "centered": "centered",
+                                        "centered-padding": "centered + padding",
+                                        "fullwidth": "fullwidth",
+                                        "fullwidth-padding": "fullwidth + padding"
+                                    },
+                                    "default_value": [
+                                        "centered"
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb54b282591",
+                                    "label": "[:en]Row layout[:de]Row Layout[:]",
+                                    "name": "row_layout",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "color_main": "main color",
+                                        "color_alt": "alt. color"
+                                    },
+                                    "default_value": [
+                                        "color_main"
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb45663988f",
+                                    "label": "[:en]Color scheme[:de]Farbschema[:]",
+                                    "name": "background",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "return_format": "id",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "jpg, png, jpeg",
+                                    "key": "field_58bb477439890",
+                                    "label": "[:en]Background image[:de]Hintergrundbild[:]",
+                                    "name": "background_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "58972f6ff638b",
+                            "name": "block_gallery",
+                            "label": "Gallery",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "key": "field_58bc0ad0ac34f",
+                                    "label": "Content",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "layout": "horizontal",
+                                    "choices": {
+                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>",
+                                        "text_above": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Text above<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Text oberhalb<\/span>",
+                                        "text_below": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Text below<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Text unterhalb<\/span>"
+                                    },
+                                    "default_value": [],
+                                    "allow_custom": 0,
+                                    "save_custom": 0,
+                                    "toggle": 0,
+                                    "return_format": "value",
+                                    "key": "field_58bb49e139895",
+                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                    "name": "extra_content",
+                                    "type": "checkbox",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "readonly": 0,
+                                    "disabled": 0,
+                                    "key": "field_58bb49ea39896",
+                                    "label": "[:en]Title[:de]Titel[:]",
+                                    "name": "title",
+                                    "type": "qtranslate_text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58bb49e139895",
+                                                "operator": "==",
+                                                "value": "title"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "new_lines": "br",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "readonly": 0,
+                                    "disabled": 0,
+                                    "rows": "",
+                                    "key": "field_58bb49f439897",
+                                    "label": "[:en]Text above[:de]Text oberhalb[:]",
+                                    "name": "text_above",
+                                    "type": "qtranslate_textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58bb49e139895",
+                                                "operator": "==",
+                                                "value": "text_above"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "library": "all",
+                                    "min": "",
+                                    "max": "",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "jpg, jpeg, png, gif",
+                                    "insert": "append",
+                                    "key": "field_58972f6ff638c",
+                                    "label": "[:en]Gallery[:de]Galerie[:]",
+                                    "name": "gallery_images",
+                                    "type": "gallery",
+                                    "instructions": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Press 'Add to gallery' to insert pictures<\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Klicke auf 'Zur Galerie hinzuf\u00fcgen' um Bilder hinzuzuf\u00fcgen<\/div>",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "new_lines": "br",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "readonly": 0,
+                                    "disabled": 0,
+                                    "rows": "",
+                                    "key": "field_58bb49fb39898",
+                                    "label": "[:en]Text below[:de]Text unterhalb[:]",
+                                    "name": "text_below",
+                                    "type": "qtranslate_textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58bb49e139895",
+                                                "operator": "==",
+                                                "value": "text_below"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "key": "field_58bc0ae7ac350",
+                                    "label": "Settings",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "2": "2",
+                                        "3": "3",
+                                        "4": "4",
+                                        "6": "6"
+                                    },
+                                    "default_value": [
+                                        3
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb4d263989a",
+                                    "label": "[:en]Images per row[:de]Bilder pro Zeile[:]",
+                                    "name": "images_per_row",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": 0,
+                                    "message": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\"><\/span>deactivate<span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">deaktivieren<\/span>",
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "key": "field_58bb4ef03989c",
+                                    "label": "[:en]Image single view[:de]Bild Einzelanzeige[:]",
+                                    "name": "no_single_view",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "centered": "centered",
+                                        "centered-padding": "centered + padding",
+                                        "fullwidth": "fullwidth",
+                                        "fullwidth-padding": "fullwidth + padding"
+                                    },
+                                    "default_value": [
+                                        "centered"
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb587482592",
+                                    "label": "[:en]Row layout[:de]Row Layout[:]",
+                                    "name": "row_layout",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "color_main": "main color",
+                                        "color_alt": "alt. color"
+                                    },
+                                    "default_value": [
+                                        "color_main"
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb49d739894",
+                                    "label": "[:en]Color scheme[:de]Farbschema[:]",
+                                    "name": "background",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "return_format": "id",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "jpg, png, jpeg",
+                                    "key": "field_58bb4a0339899",
+                                    "label": "[:en]Background image[:de]Hintergrundbild[:]",
+                                    "name": "background_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "5897245e03b76",
+                            "name": "block_wysiwyg",
+                            "label": "Text",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "key": "field_58bc0b03ac351",
+                                    "label": "Content",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "layout": "horizontal",
+                                    "choices": {
+                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                    },
+                                    "default_value": [],
+                                    "allow_custom": 0,
+                                    "save_custom": 0,
+                                    "toggle": 0,
+                                    "return_format": "value",
+                                    "key": "field_58bb4f953989d",
+                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                    "name": "extra_content",
+                                    "type": "checkbox",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "readonly": 0,
+                                    "disabled": 0,
+                                    "key": "field_58bb4fa43989e",
+                                    "label": "[:en]Title[:de]Titel[:]",
+                                    "name": "title",
+                                    "type": "qtranslate_text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_58bb4f953989d",
+                                                "operator": "==",
+                                                "value": "title"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 0,
+                                    "default_value": "",
+                                    "key": "field_58972c5ff6384",
+                                    "label": "[:en]Text editor[:de]Text-Editor[:]",
+                                    "name": "wysiwyg_editor",
+                                    "type": "qtranslate_wysiwyg",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "delay": 0
+                                },
+                                {
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "key": "field_58bc0b14ac352",
+                                    "label": "Settings",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "centered": "centered",
+                                        "centered-padding": "centered + padding",
+                                        "fullwidth": "fullwidth",
+                                        "fullwidth-padding": "fullwidth + padding"
+                                    },
+                                    "default_value": [
+                                        "centered"
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb58b582593",
+                                    "label": "[:en]Row layout[:de]Row Layout[:]",
+                                    "name": "row_layout",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "color_main": "main color",
+                                        "color_alt": "alt. color"
+                                    },
+                                    "default_value": [
+                                        "color_main"
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb4fb73989f",
+                                    "label": "[:en]Color scheme[:de]Farbschema[:]",
+                                    "name": "background",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "return_format": "id",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "jpg, png, jpeg",
+                                    "key": "field_58bb4fc0398a0",
+                                    "label": "[:en]Background image[:de]Hintergrundbild[:]",
+                                    "name": "background_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "5897251603b77",
+                            "name": "block_splitted",
+                            "label": "Splitted",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "key": "field_58bc0b50ac353",
+                                    "label": "Content",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "layouts": [
+                                        {
+                                            "key": "58972e9c9b1b0",
+                                            "name": "block_embed",
+                                            "label": "Video (YouTube...)",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "layout": "vertical",
+                                                    "choices": {
+                                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_custom": 0,
+                                                    "save_custom": 0,
+                                                    "toggle": 0,
+                                                    "return_format": "value",
+                                                    "key": "field_58bb81b7a51cd",
+                                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                                    "name": "extra_content",
+                                                    "type": "checkbox",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58bb81d1a51ce",
+                                                    "label": "[:en]Title[:de]Titel[:]",
+                                                    "name": "title",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_58bb81b7a51cd",
+                                                                "operator": "==",
+                                                                "value": "title"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "width": "",
+                                                    "height": "",
+                                                    "key": "field_58972f33f638a",
+                                                    "label": "[:en]Video[:de]Video[:]",
+                                                    "name": "embed_video",
+                                                    "type": "oembed",
+                                                    "instructions": "",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "cover": "Cover size",
+                                                        "padding": "Padding"
+                                                    },
+                                                    "default_value": [
+                                                        "cover"
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb51418258d",
+                                                    "label": "[:en]Layout[:de]Layout[:]",
+                                                    "name": "layout",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        {
+                                            "key": "58972fccf638d",
+                                            "name": "block_gallery",
+                                            "label": "Gallery",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "layout": "vertical",
+                                                    "choices": {
+                                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_custom": 0,
+                                                    "save_custom": 0,
+                                                    "toggle": 0,
+                                                    "return_format": "value",
+                                                    "key": "field_58bb8176a51cb",
+                                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                                    "name": "extra_content",
+                                                    "type": "checkbox",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58bb8195a51cc",
+                                                    "label": "[:en]Title[:de]Titel[:]",
+                                                    "name": "title",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_58bb8176a51cb",
+                                                                "operator": "==",
+                                                                "value": "title"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "library": "all",
+                                                    "min": "",
+                                                    "max": "",
+                                                    "min_width": "",
+                                                    "min_height": "",
+                                                    "min_size": "",
+                                                    "max_width": "",
+                                                    "max_height": "",
+                                                    "max_size": "",
+                                                    "mime_types": "jpg, jpeg, png, gif",
+                                                    "insert": "append",
+                                                    "key": "field_58972fd8f638e",
+                                                    "label": "[:en]Gallery[:de]Galerie[:]",
+                                                    "name": "gallery_images",
+                                                    "type": "gallery",
+                                                    "instructions": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Press 'Add to gallery' to insert pictures<\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Klicke auf 'Zur Galerie hinzuf\u00fcgen' um Bilder hinzuzuf\u00fcgen<\/div>",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "2": "2",
+                                                        "3": "3",
+                                                        "4": "4",
+                                                        "6": "6"
+                                                    },
+                                                    "default_value": [
+                                                        3
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb6742bff85",
+                                                    "label": "[:en]Images per row[:de]Bilder pro Zeile[:]",
+                                                    "name": "images_per_row",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": 0,
+                                                    "message": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\"><\/span>deactivate<span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">deaktivieren<\/span>",
+                                                    "ui": 0,
+                                                    "ui_on_text": "",
+                                                    "ui_off_text": "",
+                                                    "key": "field_58bb677bbff86",
+                                                    "label": "[:en]Image single view[:de]Bild Einzelanzeige[:]",
+                                                    "name": "no_single_view",
+                                                    "type": "true_false",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "cover": "Cover size",
+                                                        "padding": "Padding"
+                                                    },
+                                                    "default_value": [
+                                                        "cover"
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb51d98258e",
+                                                    "label": "[:en]Layout[:de]Layout[:]",
+                                                    "name": "layout",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        {
+                                            "key": "5897337cf6393",
+                                            "name": "block_image",
+                                            "label": "Image",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "layout": "vertical",
+                                                    "choices": {
+                                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_custom": 0,
+                                                    "save_custom": 0,
+                                                    "toggle": 0,
+                                                    "return_format": "value",
+                                                    "key": "field_58bb80e6a51c8",
+                                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                                    "name": "extra_content",
+                                                    "type": "checkbox",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58bb8157a51ca",
+                                                    "label": "[:en]Title[:de]Titel[:]",
+                                                    "name": "title",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_58bb80e6a51c8",
+                                                                "operator": "==",
+                                                                "value": "title"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "return_format": "array",
+                                                    "preview_size": "thumbnail",
+                                                    "library": "all",
+                                                    "min_width": "",
+                                                    "min_height": "",
+                                                    "min_size": "",
+                                                    "max_width": "",
+                                                    "max_height": "",
+                                                    "max_size": "",
+                                                    "mime_types": "jpg, jpeg, png, gif",
+                                                    "key": "field_5897337cf6394",
+                                                    "label": "[:en]Image[:de]Bild[:]",
+                                                    "name": "image_image",
+                                                    "type": "image",
+                                                    "instructions": "",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "cover": "Cover size",
+                                                        "padding": "Padding"
+                                                    },
+                                                    "default_value": [
+                                                        "cover"
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb52138258f",
+                                                    "label": "[:en]Layout[:de]Layout[:]",
+                                                    "name": "layout",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        {
+                                            "key": "58973012f638f",
+                                            "name": "block_wysiwyg",
+                                            "label": "Text",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "layout": "vertical",
+                                                    "choices": {
+                                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_custom": 0,
+                                                    "save_custom": 0,
+                                                    "toggle": 0,
+                                                    "return_format": "value",
+                                                    "key": "field_58bb7fe9a51c6",
+                                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                                    "name": "extra_content",
+                                                    "type": "checkbox",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58bb8035a51c7",
+                                                    "label": "[:en]Title[:de]Titel[:]",
+                                                    "name": "title",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_58bb7fe9a51c6",
+                                                                "operator": "==",
+                                                                "value": "title"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "tabs": "all",
+                                                    "toolbar": "full",
+                                                    "media_upload": 0,
+                                                    "default_value": "",
+                                                    "key": "field_5897302cf6390",
+                                                    "label": "[:en]Text editor[:de]Text-Editor[:]",
+                                                    "name": "wysiwyg_editor",
+                                                    "type": "qtranslate_wysiwyg",
+                                                    "instructions": "",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "delay": 0
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "cover": "Cover size",
+                                                        "padding": "Padding"
+                                                    },
+                                                    "default_value": [
+                                                        "padding"
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb523082590",
+                                                    "label": "[:en]Layout[:de]Layout[:]",
+                                                    "name": "layout",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": 1,
+                                    "button_label": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Add left block<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Block links hinzuf\u00fcgen<\/span>",
+                                    "key": "field_58972decf6387",
+                                    "label": "[:en]Left side[:de]Linke Seite[:]",
+                                    "name": "splitted_left",
+                                    "type": "flexible_content",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "layouts": [
+                                        {
+                                            "key": "58972e9c9b1b0",
+                                            "name": "block_embed",
+                                            "label": "Video (YouTube...)",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "layout": "vertical",
+                                                    "choices": {
+                                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_custom": 0,
+                                                    "save_custom": 0,
+                                                    "toggle": 0,
+                                                    "return_format": "value",
+                                                    "key": "field_58bb8205a51cf",
+                                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                                    "name": "extra_content",
+                                                    "type": "checkbox",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58bb8241a51d0",
+                                                    "label": "[:en]Title[:de]Titel[:]",
+                                                    "name": "title",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_58bb8205a51cf",
+                                                                "operator": "==",
+                                                                "value": "title"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "width": "",
+                                                    "height": "",
+                                                    "key": "field_58973438d0f73",
+                                                    "label": "[:en]Video[:de]Video[:]",
+                                                    "name": "embed_video",
+                                                    "type": "oembed",
+                                                    "instructions": "",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "cover": "Cover size",
+                                                        "padding": "Padding"
+                                                    },
+                                                    "default_value": [
+                                                        "cover"
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb6513db6a4",
+                                                    "label": "[:en]Layout[:de]Layout[:]",
+                                                    "name": "layout",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        {
+                                            "key": "58972fccf638d",
+                                            "name": "block_gallery",
+                                            "label": "Gallery",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "layout": "vertical",
+                                                    "choices": {
+                                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_custom": 0,
+                                                    "save_custom": 0,
+                                                    "toggle": 0,
+                                                    "return_format": "value",
+                                                    "key": "field_58bb8339a51d6",
+                                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                                    "name": "extra_content",
+                                                    "type": "checkbox",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58bb834ba51d7",
+                                                    "label": "[:en]Title[:de]Titel[:]",
+                                                    "name": "title",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_58bb8339a51d6",
+                                                                "operator": "==",
+                                                                "value": "title"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "library": "all",
+                                                    "min": "",
+                                                    "max": "",
+                                                    "min_width": "",
+                                                    "min_height": "",
+                                                    "min_size": "",
+                                                    "max_width": "",
+                                                    "max_height": "",
+                                                    "max_size": "",
+                                                    "mime_types": "jpg, jpeg, png, gif",
+                                                    "insert": "append",
+                                                    "key": "field_58973438d0f74",
+                                                    "label": "[:en]Gallery[:de]Galerie[:]",
+                                                    "name": "gallery_images",
+                                                    "type": "gallery",
+                                                    "instructions": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Press 'Add to gallery' to insert pictures<\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Klicke auf 'Zur Galerie hinzuf\u00fcgen' um Bilder hinzuzuf\u00fcgen<\/div>",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "2": "2",
+                                                        "3": "3",
+                                                        "4": "4",
+                                                        "6": "6"
+                                                    },
+                                                    "default_value": [
+                                                        3
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bbfb2b00e49",
+                                                    "label": "[:en]Images per row[:de]Bilder pro Zeile[:]",
+                                                    "name": "images_per_row",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": 0,
+                                                    "message": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\"><\/span>deactivate<span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">deaktivieren<\/span>",
+                                                    "ui": 0,
+                                                    "ui_on_text": "",
+                                                    "ui_off_text": "",
+                                                    "key": "field_58bbfb8700e4a",
+                                                    "label": "[:en]Image single view[:de]Bild Einzelanzeige[:]",
+                                                    "name": "no_single_view",
+                                                    "type": "true_false",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "cover": "Cover size",
+                                                        "padding": "Padding"
+                                                    },
+                                                    "default_value": [
+                                                        "cover"
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb656adb6a6",
+                                                    "label": "[:en]Layout[:de]Layout[:]",
+                                                    "name": "layout",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        {
+                                            "key": "5897337cf6393",
+                                            "name": "block_image",
+                                            "label": "Image",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "layout": "vertical",
+                                                    "choices": {
+                                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_custom": 0,
+                                                    "save_custom": 0,
+                                                    "toggle": 0,
+                                                    "return_format": "value",
+                                                    "key": "field_58bb8306a51d4",
+                                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                                    "name": "extra_content",
+                                                    "type": "checkbox",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58bb831aa51d5",
+                                                    "label": "[:en]Title[:de]Titel[:]",
+                                                    "name": "title",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_58bb8306a51d4",
+                                                                "operator": "==",
+                                                                "value": "title"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "return_format": "array",
+                                                    "preview_size": "thumbnail",
+                                                    "library": "all",
+                                                    "min_width": "",
+                                                    "min_height": "",
+                                                    "min_size": "",
+                                                    "max_width": "",
+                                                    "max_height": "",
+                                                    "max_size": "",
+                                                    "mime_types": "jpg, jpeg, png, gif",
+                                                    "key": "field_58973438d0f75",
+                                                    "label": "[:en]Image[:de]Bild[:]",
+                                                    "name": "image_image",
+                                                    "type": "image",
+                                                    "instructions": "",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "cover": "Cover size",
+                                                        "padding": "Padding"
+                                                    },
+                                                    "default_value": [
+                                                        "cover"
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb6589db6a7",
+                                                    "label": "[:en]Layout[:de]Layout[:]",
+                                                    "name": "layout",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        },
+                                        {
+                                            "key": "58973012f638f",
+                                            "name": "block_wysiwyg",
+                                            "label": "Text",
+                                            "display": "block",
+                                            "sub_fields": [
+                                                {
+                                                    "layout": "vertical",
+                                                    "choices": {
+                                                        "title": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Title<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Titel<\/span>"
+                                                    },
+                                                    "default_value": [],
+                                                    "allow_custom": 0,
+                                                    "save_custom": 0,
+                                                    "toggle": 0,
+                                                    "return_format": "value",
+                                                    "key": "field_58bb82a3a51d2",
+                                                    "label": "[:en]Extra content[:de]Zus\u00e4tzlicher Inhalt[:]",
+                                                    "name": "extra_content",
+                                                    "type": "checkbox",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "default_value": "",
+                                                    "maxlength": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "readonly": 0,
+                                                    "disabled": 0,
+                                                    "key": "field_58bb82eea51d3",
+                                                    "label": "[:en]Title[:de]Titel[:]",
+                                                    "name": "title",
+                                                    "type": "qtranslate_text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_58bb82a3a51d2",
+                                                                "operator": "==",
+                                                                "value": "title"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                },
+                                                {
+                                                    "tabs": "all",
+                                                    "toolbar": "full",
+                                                    "media_upload": 0,
+                                                    "default_value": "",
+                                                    "key": "field_58973438d0f76",
+                                                    "label": "[:en]Text editor[:de]Text-Editor[:]",
+                                                    "name": "wysiwyg_editor",
+                                                    "type": "qtranslate_wysiwyg",
+                                                    "instructions": "",
+                                                    "required": 1,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "delay": 0
+                                                },
+                                                {
+                                                    "multiple": 0,
+                                                    "allow_null": 0,
+                                                    "choices": {
+                                                        "cover": "Cover size",
+                                                        "padding": "Padding"
+                                                    },
+                                                    "default_value": [
+                                                        "padding"
+                                                    ],
+                                                    "ui": 0,
+                                                    "ajax": 0,
+                                                    "placeholder": "",
+                                                    "return_format": "value",
+                                                    "key": "field_58bb659bdb6a8",
+                                                    "label": "[:en]Layout[:de]Layout[:]",
+                                                    "name": "layout",
+                                                    "type": "select",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    }
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": 1,
+                                    "button_label": "<span class=\"rsm-qtrans-descr-en\">Add right block<\/span><span class=\"rsm-qtrans-descr-de\">Block rechts hinzuf\u00fcgen<\/span>",
+                                    "key": "field_58973437d0f72",
+                                    "label": "[:en]Right side[:de]Rechte Seite[:]",
+                                    "name": "splitted_right",
+                                    "type": "flexible_content",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "key": "field_58bc0b5bac354",
+                                    "label": "Settings",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "centered": "centered",
+                                        "centered-padding": "centered + padding",
+                                        "fullwidth": "fullwidth",
+                                        "fullwidth-padding": "fullwidth + padding"
+                                    },
+                                    "default_value": [
+                                        "fullwidth"
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb59bf82596",
+                                    "label": "[:en]Row layout[:de]Row Layout[:]",
+                                    "name": "row_layout",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "color_main": "main color",
+                                        "color_alt": "alt. color"
+                                    },
+                                    "default_value": [
+                                        "color_main"
+                                    ],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_58bb5a4c82597",
+                                    "label": "[:en]Color scheme[:de]Farbschema[:]",
+                                    "name": "background",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "return_format": "id",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "jpg, png, jpeg",
+                                    "key": "field_58bb5a6e82598",
+                                    "label": "[:en]Background image[:de]Hintergrundbild[:]",
+                                    "name": "background_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "button_label": "<span class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Add block<\/span><span class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Block hinzuf\u00fcgen<\/span>",
+                    "key": "field_589722150a3ed",
+                    "label": "[:en]Content blocks[:de]Inhaltsblock[:]",
+                    "name": "about_content_blocks",
+                    "type": "flexible_content",
+                    "instructions": "<div class=\"rsm-qtrans-descr rsm-qtrans-descr-en\">Press 'Add block' to insert additional content blocks<\/div>\r\n<div class=\"rsm-qtrans-descr rsm-qtrans-descr-de\">Klicke auf 'Block hinzuf\u00fcgen' um weitere Inhaltsbl\u00f6cke hinzuzuf\u00fcgen<\/div>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 1,
+            "max": 1,
+            "layout": "block",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_589721840a3e8",
+            "label": "[:en]About the restaurant[:de]\u00dcber das Restaurant[:]",
+            "name": "home_group_about",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "tpl-page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "revisions",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1490126539
+}
